@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Position Practice</title>
+  <style>
+    body{
+      height: 3000px;
+      font-family: Arial;
+    }
+    .my-image{
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+    }
+
+    .profile{
+      margin-left: 50px;
+    }
+
+    .buttons{
+      margin-right: 50px;
+    }
+
+    .profile,
+    .buttons{
+      display: flex;
+      align-items: center;
+    }
+
+    .username{
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .friend{
+      margin-right: 5px;
+    }
+
+    .add-friend-button,
+    .message-button{
+      border: none;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+
+    .add-friend-button{
+      color: white;
+      background-color: rgb(8, 100, 175);
+    }
+
+    .message-button{
+      font-weight: bold;
+      background-color: rgb(209, 200, 200);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="image">
+        <img class="my-image" src="cat.jpg" alt="">
+      </div>
+      <div class="username">
+        Oliver Cat
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="friend">
+        <button class="add-friend-button">Add Friend</button>
+      </div>
+      <div class="message">
+        <button class="message-button">Message</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

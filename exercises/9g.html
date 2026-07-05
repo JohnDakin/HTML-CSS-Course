@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div Practice</title>
+    <style>
+      p{
+        margin: 0;
+        font-family:Arial;
+      }
+      .profile-picture{
+        width: 120px;
+        height: 140px;
+        object-fit: cover;
+        margin-bottom: 5px;
+      }
+
+      .username{
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+
+      .friends{
+        font-size: 12px;
+        color: rgb(105, 105, 105);
+        margin-bottom: 7px;
+      }
+
+      .friends:hover{
+        cursor: pointer;
+      }
+
+      .add-friends{
+        color: white;
+        background-color: rgb(12, 133, 233);
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius: 3px;
+      }
+
+      .username,
+      .friends,
+      .add-friends{
+        margin-left: 10px;
+      }
+
+      .container{
+        width: 120px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+        padding-bottom: 6px;
+        display: inline-block;
+        margin-right: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="profile-picture" src="cat.jpg">
+      <p class="username">Oliver</p>
+      <p class="friends">2 mutual friends</p>
+      <button class="add-friends">Add Friend</button>
+    </div>
+
+    <div class="container">
+      <img class="profile-picture" src="cat2.jpg">
+      <p class="username">Mimi</p>
+      <p class="friends">3 mutual friends</p>
+      <button class="add-friends">Add Friend</button>
+    </div>
+
+    <div class="container">
+      <img class="profile-picture" src="dog.jpg">
+      <p class="username">Rex</p>
+      <p class="friends">4 mutual friends</p>
+      <button class="add-friends">Add Friend</button>
+    </div>
+  </body>
+</html>

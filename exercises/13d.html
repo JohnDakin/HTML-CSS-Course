@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Flexbox Exercise</title>
+  <style>
+    p{
+      margin: 0;
+    }
+
+    body{
+      font-family: Arial;
+    }
+
+    .image{
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .container{
+      width: 370px;
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+      padding: 10px 10px 20px 10px;
+    }
+    .inbox-content,
+    .header{
+      display: flex;
+
+    }
+
+    .header{
+      justify-content: space-between;
+    }
+
+    .inbox-title,
+    .time,
+    .message{
+      color: rgb(109, 109, 109);
+    }
+
+    .inbox-title{
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .time{
+      font-size: 13px;
+    }
+
+    .message,
+    .intro{
+      font-size: 14px;
+    }
+
+    .intro,
+    .sender{
+      font-weight: bold;
+    }
+
+    .sender{
+      margin-bottom: 5px;
+    }
+
+    .message{
+      margin-top: 5px;
+    }
+
+    .middle-content{
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inbox-title">ALL INBOXES</div>
+    <div class="inbox-content">
+      <div class="profile-image">
+        <img class="image" src="cat.jpg" alt="">
+      </div>
+      <div class="middle-content">
+        <div class="header">
+          <div class="sender">
+            Chewy Promotions
+          </div>
+          <div class="time">
+            4:58PM
+          </div>
+        </div>
+        
+        <p class="intro">
+          Biggest sales of the year!
+        </p>
+        <p class="message">
+          Hey there! We're writing to tell you about our...
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

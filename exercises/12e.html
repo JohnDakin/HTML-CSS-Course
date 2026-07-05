@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox Exercise</title>
+  <style>
+    body{
+      font-family: Arial;
+      /* font-weight: bold; */
+    }
+    .parent{
+      width: 300px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .desc{
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .count{
+      background-color: rgb(8, 98, 216);
+      height: 17px;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+      <div class="content">
+    <div class="desc">
+      Home
+    </div>
+    <div class="count">14</div>
+  </div>
+  <div class="content">
+    <div class="desc">
+      Notifications
+    </div>
+    <div class="count">3</div>
+  </div>
+  <div class="content">
+    <div class="desc-bottom">
+      Messages
+    </div>
+    <div class="count">5</div>
+  </div>
+  </div>
+  
+</body>
+</html>

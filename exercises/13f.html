@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Flexbox Practice</title>
+  <style>
+    body{
+      font-family: Arial;
+    }
+    p{
+      margin: 0;
+    }
+    .image{
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .container{
+      display: flex;
+      width: 400px;
+    }
+
+    .right-section{
+      margin-left: 10px;
+    }
+
+    .header{
+      display: flex;
+      margin-bottom: 7px;
+    }
+    .username{
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .handle{
+      color: rgb(96,96,96);
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .content{
+      line-height: 20px;
+    }
+
+    .video-link{
+      display: flex;
+      margin-top: 11px;
+      width: 340px;
+    }
+
+    .video-preview{
+      width: 150px;
+      height: 90px;
+      background-color: rgb(192, 190, 190);
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    .video-desc{
+      border: 1px solid rgb(192, 190, 190);
+      display: flex;
+      flex-direction: column;
+      /* width: 200px; */
+      padding-right: 10px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+
+    }
+
+    .video-desc p{
+      margin-left: 10px;
+    }
+
+    .video-desc p:first-child{
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: rgb(94, 92, 92);
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .video-desc p:nth-child(2){
+      line-height: 22px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-picture">
+      <img class="image" src="cat.jpg" alt="">
+    </div>
+    <div class="right-section">
+      <div class="header">
+        <div class="username">
+          supersimple.dev
+        </div>
+        <div class="handle">
+          @SuperSimpleDev
+        </div>
+      </div>
+      <div class="content">
+        What is backend web development? A complete overview. New video is up!
+      </div>
+      <div class="video-link">
+        <div class="video-preview">
+
+        </div>
+        <div class="video-desc">
+          <p class="origin">youtube.com</p>
+          <p class="title">
+            Backend web development - a complete overview (2021)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

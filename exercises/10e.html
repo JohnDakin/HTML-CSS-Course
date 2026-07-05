@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div Practice</title>
+    <style>
+      p{
+        margin: 0;
+        font-family:Arial;
+      }
+      .profile-picture{
+        width: 160px;
+        height: 140px;
+        object-fit: cover;
+        margin-bottom: 5px;
+      }
+
+      .username{
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+
+      .friends{
+        font-size: 12px;
+        color: rgb(105, 105, 105);
+        margin-bottom: 7px;
+      }
+
+      .friends:hover{
+        cursor: pointer;
+      }
+
+      .add-friends{
+        color: white;
+        background-color: rgb(12, 133, 233);
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius: 3px;
+      }
+
+      .username,
+      .friends,
+      .add-friends{
+        margin-left: 10px;
+      }
+
+      .container{
+        width: 160px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+        padding-bottom: 6px;
+        display: inline-block;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+
+      .horizontal-layout1{
+        width: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+
+      .horizontal-layout2{
+        width: 110px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .mutual-friends-profiles{
+        width: 100%;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vertical-layout1">
+        <img class="profile-picture" src="cat.jpg">
+      </div>
+      <div class="vertical-layout2">
+        <div username-vertical-layout>
+        <p class="username">Oliver</p>
+        </div>
+        <div friends-vertical-layout>
+          <div class="horizontal-layout1">
+            <img class="mutual-friends-profiles" src="dog2.jpg">
+          </div>
+          <div class="horizontal-layout2">
+            <p class="friends">2 mutual friends</p>
+          </div>
+          
+        </div>
+        <div class="add-friends-vertical-layout">
+          <button class="add-friends">Add Friend</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="vertical-layout1">
+        <img class="profile-picture" src="cat2.jpg">
+      </div>
+      <div class="vertical-layout2">
+        <div username-vertical-layout>
+        <p class="username">Mimi</p>
+        </div>
+        <div friends-vertical-layout>
+          <div class="horizontal-layout1">
+            <img class="mutual-friends-profiles" src="dog2.jpg">
+          </div>
+          <div class="horizontal-layout2">
+            <p class="friends">3 mutual friends</p>
+          </div>
+          
+        </div>
+        <div class="add-friends-vertical-layout">
+          <button class="add-friends">Add Friend</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="vertical-layout1">
+        <img class="profile-picture" src="dog.jpg">
+      </div>
+      <div class="vertical-layout2">
+        <div username-vertical-layout>
+        <p class="username">Rex</p>
+        </div>
+        <div friends-vertical-layout>
+          <div class="horizontal-layout1">
+            <img class="mutual-friends-profiles" src="dog2.jpg">
+          </div>
+          <div class="horizontal-layout2">
+            <p class="friends">4 mutual friends</p>
+          </div>
+          
+        </div>
+        <div class="add-friends-vertical-layout">
+          <button class="add-friends">Add Friend</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

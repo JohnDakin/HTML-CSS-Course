@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Fixed Practice</title>
+  <style>
+    body{
+      height: 3000px;
+      font-family: Arial;
+    }
+
+    .my-image{
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .image-navbar{
+      display: flex;
+      flex-direction: column;
+      width: 60px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background-color: black;
+      padding: 20px 0 0 10px;
+      z-index: 90;
+    }
+
+    .info-navbar{
+      display: flex;
+      flex-direction: column;
+      width: 160px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(59, 58, 58);
+      color: rgb(153, 153, 153);
+      padding: 20px 20px 0 90px;
+    }
+
+    .header,
+    .new-videos,
+    .updates,
+    .faq{
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .header{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-navbar">
+    <div class="profile-image">
+      <img class="my-image" src="cat.jpg" alt="">
+    </div>
+    <div class="profile-image">
+      <img class="my-image" src="cat2.jpg" alt="">
+    </div>
+    <div class="profile-image">
+      <img class="my-image" src="dog.jpg" alt="">
+    </div>
+
+  </div>
+
+  <div class="info-navbar">
+    <div class="header">
+      <div class="info">INFO</div>
+      <div class="more">+</div>
+    </div>
+    <div class="new-videos"># new-videos</div>
+    <div class="updates"># updates</div>
+    <div class="faq"># faq</div>
+  </div>
+</body>
+</html>

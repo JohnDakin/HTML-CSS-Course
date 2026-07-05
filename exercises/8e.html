@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display Practice</title>
+    <style>
+
+      body{
+        font-family: Arial;
+      }
+      p{
+        margin:0;
+      }
+
+      .heading{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 18px;
+      }
+
+      .location{
+        margin-bottom: 5px;
+      }
+      .location,
+      .destination{
+        display: block;
+        padding: 8px 10px;
+        background-color: rgb(230, 226, 226);
+        border: none;
+        width: 320px;
+      }
+
+      .destination{
+        margin-bottom: 28px;
+      }
+
+      .request-button{
+        margin-right: 15px;
+        color: white;
+        background-color: black;
+      }
+
+      .schedule-button{
+        background-color: rgb(216, 213, 213);
+      }
+      .request-button,
+      .schedule-button{
+        padding: 8px 10px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="heading">
+      Request a ride now
+    </p>
+    <input class="location" type="text" placeholder="Enter pickup location">
+    <input class="destination" type="text" placeholder="Enter destination">
+    <button class="request-button">Request now</button>
+    <button class="schedule-button">Schedule for later</button>
+  </body>
+</html>

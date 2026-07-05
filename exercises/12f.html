@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox Practice</title>
+  <style>
+    body{
+      font-family: Arial;
+    }
+    .parent{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+      background-color: rgb(177, 42, 230);
+      padding: 0 5px  0 15px;
+      color: white;
+    }
+
+    .home,
+    .download-button{
+      cursor: pointer;
+    }
+
+    .search-input{
+      border: none;
+      width: 300px;
+      padding: 4px 0 4px 15px;
+      border-radius: 15px;
+    }
+
+    .download-button{
+      color: white;
+      background-color: rgb(177, 42, 230);
+      border: 1px solid white;
+      padding: 5px 10px;
+      transition: background-color 0.15s color 0.15s;
+    }
+
+    .download-button:hover{
+      background-color: white;
+      color: rgb(177, 42, 230);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="home">
+      Home
+    </div>
+    <div class="search">
+      <input class="search-input" type="search" placeholder="Search">
+    </div>
+    <div class="Download">
+      <button class="download-button">Download</button>
+    </div>
+  </div>
+</body>
+</html>
